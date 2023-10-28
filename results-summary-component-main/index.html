@@ -2,46 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Results summary component | Frontend Mentor</title>
+
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <div class="bg">
+    <div class="container">
+      <div class="left white-text">
+        <p class="grey-text" style="margin-bottom: 25px;font-weight: 700;">Your Result</p>
+        <div class="percentage-circle-container">
+          <div>
+            <p style="font-size: 68px; font-weight: 800; margin-bottom: -10px;">76</p>
+            <p class="grey-text-dark" style="font-size: 18px; font-weight: 500; margin-top: 0;">of 100</p>
+          </div>
   
-  Summary
+        </div>
+        <p style="font-size: 26px; font-weight: 700; margin-bottom: 8px;">Great</p> 
+        <p class="grey-text" style="font-size: 16px; margin-top: 14px;">You scored higher than 65% of<br>the people who have taken<br>these tests.</p>
+      </div>
 
-  Reaction
-  80 / 100
+      <div class="right">
+        <p style="margin: 0 0 30px 0;">Summary</p>
+        <div class="right-container">
+          <div style="background-color: hsl(0, 77%, 91%);" class="right-container-container">
+            <!-- <img class="one" href="./assets/images/icon-reaction.svg" height="16px"></img> -->
+            <p class="one">Reaction</p>
+            <p><span class="black-text bold-text">80</span> / 100</p>
+          </div>
+          <div style="background-color: hsl(40, 100%, 95%);" class="right-container-container two">
+            <p style="color: hsl(39, 100%, 56%);">Memory</p>
+            <p class="k"><span class="black-text bold-text">92</span> / 100</p>
+          </div>
+          <div style="background-color: hsl(166, 100%, 96%);" class="right-container-container three">
+            <p style="color: hsl(166, 100%, 37%);">Verbal</p>
+            <p><span class="black-text bold-text">61</span> / 100</p>
+          </div>
+          <div style="background-color: rgb(234, 235, 255);" class="right-container-container four">
+            <p style="color: hsl(234, 85%, 45%);">Visual</p>
+            <p><span class="black-text bold-text">72</span> / 100</p>
+          </div>
+  
+        </div>
+        <button class="btn"><a href="#">Continue</a></button>
+      </div>
+    </div>
+  </div>
 
-  Memory
-  92 / 100
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/sakibmouin">Nazmus Sakib Mouin</a>.
   </div>
 </body>
 </html>

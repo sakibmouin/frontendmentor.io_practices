@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 67%);
+    --l-red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --c-blue: hsl(234, 85%, 45%);
+    --left-grad: linear-gradient(to bottom left, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --c-grad: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    width: 640px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1ch;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.left {
+    padding: 30px 40px;
+    text-align: center;
+    min-width: 320px;
+    max-width: 320px;
+    border-radius: 30px;
+    background: var(--left-grad);
+
+}
+
+.right {
+    min-width: 320px;
+    max-width: 320px;
+    padding: 30px 40px;
+    font-weight: 700;
+
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(148, 148, 148);
+}
+
+.right-container>div {
+    margin: 0 0 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.right-container-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.right-container-container p {
+    display: inline-block;
+}
+
+
+/* .right-container-left-item {
+    margin-right: auto;
+}
+
+.right-container-right-item {
+    margin-left: auto;
+} */
+
+
+.percentage-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: var(--c-grad);
+}
+
+.btn {
+    background-color: hsla(241, 72%, 46%, 0);
+}
+
+/* utilities */
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.grey-text {
+    color: hsl(0, 0%, 100%);
+}
+
+.grey-text-dark {
+    color: hsla(0, 0%, 100%, 50%);
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.one {
+    color: var(--red);
+    fill: var(--l-red);
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
