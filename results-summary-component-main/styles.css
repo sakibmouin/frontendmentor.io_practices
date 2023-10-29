@@ -2,10 +2,13 @@
 
 :root {
     --red: hsl(0, 100%, 67%);
-    --l-red: hsl(0, 100%, 67%);
+    --l-red: hsl(6, 100%, 98%);
     --yellow: hsl(39, 100%, 56%);
+    --l-yellow: hsl(42, 100%, 97%);
     --green: hsl(166, 100%, 37%);
+    --l-green: hsl(173, 53%, 97%);
     --c-blue: hsl(234, 85%, 45%);
+    --c-l-blue: hsl(240, 71%, 97%);
     --left-grad: linear-gradient(to bottom left, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     --c-grad: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
@@ -16,6 +19,7 @@
     font-family: 'Hanken Grotesk', sans-serif;
     margin: 0;
     padding: 0;
+    box-shadow: none;
 }
 
 .bg {
@@ -28,6 +32,7 @@
 
 .container {
     display: flex;
+    flex-direction: row;
     width: 640px;
     background-color: white;
     border-radius: 30px;
@@ -38,17 +43,15 @@
 .left {
     padding: 30px 40px;
     text-align: center;
-    min-width: 320px;
-    max-width: 320px;
+    width: 320px;
     border-radius: 30px;
     background: var(--left-grad);
 
 }
 
 .right {
-    min-width: 320px;
-    max-width: 320px;
-    padding: 30px 40px;
+    width: 320px;
+    padding: 30px 30px;
     font-weight: 700;
 
 }
@@ -61,10 +64,11 @@
     justify-content: center;
     align-items: center;
     color: rgb(148, 148, 148);
+    margin-top: 30px;
 }
 
 .right-container>div {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     width: 100%;
     border-radius: 10px;
     padding: 10px;
@@ -102,11 +106,66 @@
     width: 180px;
     border-radius: 50%;
     background: var(--c-grad);
+    box-shadow: inset var(--left-grad) 0px 0px 60px -12px;
 }
 
 .btn {
     background-color: hsla(241, 72%, 46%, 0);
+    width: 100%;
+    padding: 12px 0 12px 0;
+    border-width: 2px 4px;
+    border-radius: 35px;
+    box-shadow: none;
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 30px;
 }
+
+.btn>a {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* Mobile View */
+
+@media (max-width: 375px) {
+    .bg {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container {
+        height: 809px;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .left {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .attribution {
+        margin-top: 50px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* --------------- */
+
+
 
 /* utilities */
 .white-text {
@@ -118,7 +177,11 @@
 }
 
 .grey-text {
-    color: hsl(0, 0%, 100%);
+    color: rgba(128, 128, 128, 0.727);
+}
+
+.grey-text-2 {
+    color: hsla(0, 0%, 100%, 70%);
 }
 
 .grey-text-dark {
@@ -131,9 +194,23 @@
 
 .one {
     color: var(--red);
-    fill: var(--l-red);
+    background-color: var(--l-red);
 }
 
+.two {
+    color: var(--yellow);
+    background-color: var(--l-yellow);
+}
+
+.three {
+    color: var(--green);
+    background-color: var(--l-green);
+}
+
+.four {
+    color: var(--c-blue);
+    background-color: var(--c-l-blue);
+}
 
 
 
